@@ -1,25 +1,21 @@
 class Ztach < Formula
   desc "Terminal session multiplexer with viewport support"
   homepage "https://github.com/orderrrr/ztach"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/orderrrr/ztach/releases/download/v0.1.0/ztach-0.1.0-macos-arm64.tar.gz"
-      sha256 "ec7832b65737d4ed5c677b4dd3cb6b92ae5426cf0219dbebdfc41e5f7ea9e529"
+      url "https://github.com/orderrrr/ztach/releases/download/v0.2.0/ztach-0.2.0-macos-arm64.tar.gz"
+      sha256 "a16232636724677b3665e1b137ad018560e8611ee815ad588fd167f773234757"
     else
-      url "https://github.com/orderrrr/ztach/releases/download/v0.1.0/ztach-0.1.0-macos-x86_64.tar.gz"
-      sha256 "357cf4e1876ae6c1f3868195a6b8abe1a76f726478f65406b673fc06644f8096"
+      url "https://github.com/orderrrr/ztach/releases/download/v0.2.0/ztach-0.2.0-macos-x86_64.tar.gz"
+      sha256 "95ef60f00df5213e893ade9c7efbf25cbc8caec9fa3e048cf3445d003209d0dc"
     end
   end
 
   def install
-    if Hardware::CPU.arm?
-      bin.install "ztach-macos-arm64" => "ztach"
-    else
-      bin.install "ztach-macos-x86_64" => "ztach"
-    end
+    bin.install "ztach"
   end
 
   test do
