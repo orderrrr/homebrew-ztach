@@ -1,16 +1,16 @@
 class Ztach < Formula
   desc "Terminal session multiplexer with viewport support"
   homepage "https://github.com/orderrrr/ztach"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/orderrrr/ztach/releases/download/v0.2.2/ztach-0.2.2-macos-arm64.tar.gz"
-      sha256 "5c41256e7fb50830464945069b0947a99e2efe6664fd010a99415fabc8927cbf"
+      url "https://github.com/orderrrr/ztach/releases/download/v0.2.3/ztach-0.2.3-macos-arm64.tar.gz"
+      sha256 "b67bbc9893b8cc7ba55436e465d6dc4b70e18e1e0461e75e52d539e09df27391"
     else
-      url "https://github.com/orderrrr/ztach/releases/download/v0.2.2/ztach-0.2.2-macos-x86_64.tar.gz"
-      sha256 "2aee4ce48f86381d9b20756043c2d79cc1a63bc6b3981b060dd82528a81b508e"
+      url "https://github.com/orderrrr/ztach/releases/download/v0.2.3/ztach-0.2.3-macos-x86_64.tar.gz"
+      sha256 "2b549d77dc2b1485f96767311d5fb89c14a095bd599a36d41ddb0327cdbf20c6"
     end
   end
 
